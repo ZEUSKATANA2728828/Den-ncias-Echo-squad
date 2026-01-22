@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Staff | Echo Squad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login" id="loginBox">
+  <h2>Login Staff</h2>
+  <input type="text" id="user" placeholder="Usuário">
+  <input type="password" id="pass" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+  <p id="loginMsg"></p>
+</div>
+
+<div class="container hidden" id="painel">
+  <h1>📂 Painel de Denúncias</h1>
+  <div id="listaDenuncias"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
