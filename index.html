@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Denúncias | Echo Squad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🚨 Denúncias - Echo Squad</h1>
+  <p>Use este formulário para denunciar jogadores que quebraram as regras.</p>
+
+  <form id="denunciaForm">
+    <input type="text" id="denunciante" placeholder="Seu nick" required>
+    <input type="text" id="denunciado" placeholder="Nick do acusado" required>
+
+    <select id="tipo">
+      <option>Hack</option>
+      <option>X-Ray</option>
+      <option>Abuso</option>
+      <option>Ofensa</option>
+      <option>Bug exploit</option>
+      <option>Griefing</option>
+      <option>Outro</option>
+    </select>
+
+    <textarea id="descricao" placeholder="Descreva o ocorrido..." required></textarea>
+    <input type="text" id="provas" placeholder="Link de print/vídeo (obrigatório)" required>
+
+    <button type="submit">🚨 Enviar denúncia</button>
+  </form>
+
+  <div id="msg"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
